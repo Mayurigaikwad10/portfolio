@@ -13,18 +13,12 @@ public final class Constants {
   public static final String PORTFOLIO_URL = "/assets/myportfolio.png";
   public static final String SPACE_AURA = "Space Aura";
   public static final String PORTFOLIO = "Portfolio";
-
-
   public static final String PROFILE_PIC_ASSET_URL = "/assets/profile-pic.png";
   public static final String ABOUT_PIC_ASSET_URL = "/assets/about-pic.png";
-//  public static final String EXPERIENCE_ASSET_URL = "/assets/experience.png";
   public static final String EDUCATION_ASSET_URL = "/assets/education.png";
   public static final String ARROW_ASSET_URL = "/assets/arrow.png";
   public static final String CHECKMARK_ASSET_URL = "/assets/checkmark.png";
-
-  //public static final String POC_BANNER_URL = "/assets/poc-banner.png";
   public static final String MY_NAME = "Mayuri Gaikwad";
-
   public static final String MY_EMAIL_ID = "mayurigaikwad1998@outlook.com";
   public static final String MAIL_TO_EMAIL = "mailto:" + MY_EMAIL_ID;
 
