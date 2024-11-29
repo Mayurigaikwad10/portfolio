@@ -1,4 +1,3 @@
-
 /* GENERAL */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
@@ -464,8 +463,6 @@ article .icon {
   margin: 1rem;
 }
 .contact-info-container .icon {
-   filter: invert(1); /* Inverts the colors of the icon */
-   transition: filter 0.3s ease-in-out; /* Smooth transition for filter change */
  }
 
 .contact-info-container p {
@@ -515,152 +512,10 @@ footer p {
     color: rgb(2, 199, 219);
     list-style: none;
     padding: 0 20px;
-    animation: slide 9s steps(3) infinite; /* number of li = steps AND add 3s on every li */
-}
-/*
-@keyframes slide {
-    100% {
-        top: -6rem; /* number of li X 2rem (line-height)
-    }
 }
 
-.sec-texts li span {
-    position: relative;
-}
-
-.sec-texts li span::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 50rem;
-    height: 2rem;
-    background: #ffffff;
-    border-left: 2px solid #555555;
-    animation: typing 1.5s steps(15) infinite alternate;
-}
-
-@keyframes typing {
-    100% {
-        left: 100%;
-        margin: 0 -35px 0 35px;
-    }
-}
-*/
-/* CLIENT SCROLLER */
-/*
-#clients {
-  position: relative;
-  padding-bottom: 25vh;
-}
-
-.client-wrapper {
-  width: 100%;
-  position: relative;
-  margin-top: 3vh;
-}
-.client-wrapper i {
-  top: 50%;
-  height: 50px;
-  width: 50px;
-  cursor: pointer;
-  font-size: 1.25rem;
-  position: absolute;
-  text-align: center;
-  line-height: 50px;
-  background: #fff;
-  border-radius: 50%;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
-  transform: translateY(-50%);
-  transition: transform 0.1s linear;
-}
-.client-wrapper i:active{
-  transform: translateY(-50%) scale(0.85);
-}
-.client-wrapper i:first-child{
-  left: -22px;
-}
-.client-wrapper i:last-child{
-  right: -22px;
-}
-.client-wrapper .carousel{
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: calc((100% / 3) - 12px);
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  gap: 16px;
-  border-radius: 8px;
-  scroll-behavior: smooth;
-  scrollbar-width: none;
-}
-.carousel::-webkit-scrollbar {
-  display: none;
-}
-.carousel.no-transition {
-  scroll-behavior: auto;
-}
-.carousel.dragging {
-  scroll-snap-type: none;
-  scroll-behavior: auto;
-}
-.carousel.dragging .card {
-  cursor: grab;
-  user-select: none;
-}
-.carousel :where(.card, .img) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.carousel .card {
-  scroll-snap-align: start;
-  list-style: none;
-  background: #fff;
-  cursor: pointer;
-  padding-bottom: 15px;
-  flex-direction: column;
-  border-radius: 8px;
-}
-.carousel .card .img {
-  background: #fff;
-  height: 208px;
-  width: 208px;
-  border-radius: 50%;
-}
-.card .img img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: solid #fff;
-}
-.carousel .card h2 {
-  font-weight: 500;
-  font-size: 1.56rem;
-  margin: 30px 0 5px;
-}
-.carousel .card span {
-  color: #6A6D78;
-  font-size: 1.31rem;
-}
-@media screen and (max-width: 900px) {
-  .client-wrapper .carousel {
-    grid-auto-columns: calc((100% / 2) - 9px);
-  }
-}
-@media screen and (max-width: 600px) {
-  .client-wrapper .carousel {
-    grid-auto-columns: 100%;
-  }
-} */
-
-/* certification Banner
-.title {
-bottom-padding: 2.5rem;
-}*/
 .certification-list {
     display: flex;
-    gap: 2rem; /* Adjust gap between certifications */
     padding: 0;
     margin: 1rem 0;
     justify-content: space-evenly;
@@ -676,24 +531,16 @@ bottom-padding: 2.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.5rem; /* Increased gap between sticker and text */
     text-align: center;
     color: black !important;
-    padding: 10px; /* Padding for spacing around item */
-    margin-bottom: 1rem; /* Space between each item */
 }
 
 .certification-list .certified-item .sticker {
-    width: 30px; /* Slightly bigger sticker */
     height: 30px;
     object-fit: contain;
-    margin-bottom: 0.5rem; /* Space between sticker and text */
 }
 
 .certification-list .certified-item span {
-    font-size: 1.1rem; /* Ensure the text size is consistent */
-    line-height: 1.5; /* Make the line-height consistent */
-    margin-top: 0.5rem; /* Space between text and the bottom of the sticker */
 }
 
 #text_color {

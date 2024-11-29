@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Mayuri's Portfolio</title>
-    <link rel="stylesheet" th:href="@{/css/style.css}" />
-    <link rel="stylesheet" th:href="@{/css/mediaqueries.css}" />
+    <link rel="stylesheet" th:href="@{/css/style.css}"/>
+    <link rel="stylesheet" th:href="@{/css/mediaqueries.css}"/>
     <script th:src="@{./js/card.js}" defer></script>
     <script th:src="@{./js/youtube.js}" defer></script>
     <!-- Fontawesome Link for Icons -->
@@ -15,27 +15,21 @@
 </head>
 <body>
 <div>
-<nav id="desktop-nav">
-    <div class="logo">My Profile</div>
-    <div>
-        <ul class="nav-links">
-            <li><a th:href="@{#profilesummery}">Profile Summery</a></li>
-            <li><a th:href="@{#contact}">Contact Me</a></li>
-            <li><a th:href="@{#softwareskills}">Software Skills</a></li>
-            <li><a th:href="@{#projects}">Projects</a></li>
-            <li><a th:href="@{#certification}">Certification</a></li>
-            <li><a th:href="@{#education}">Education</a></li>
-        </ul>
-    </div>
-</nav>
-<nav id="hamburger-nav">
-    <div class="logo">My Profile!</div>
-<!--    <div class="hamburger-menu">-->
-<!--        <div class="hamburger-icon" th:onclick="toggleMenu()">-->
-<!--            <span></span>-->
-<!--            <span></span>-->
-<!--            <span></span>-->
-<!--        </div>-->
+    <nav id="desktop-nav">
+        <div class="logo">My Profile</div>
+        <div>
+            <ul class="nav-links">
+                <li><a th:href="@{#profilesummery}">Profile Summery</a></li>
+                <li><a th:href="@{#contact}">Contact Me</a></li>
+                <li><a th:href="@{#softwareskills}">Software Skills</a></li>
+                <li><a th:href="@{#projects}">Projects</a></li>
+                <li><a th:href="@{#certification}">Certification</a></li>
+                <li><a th:href="@{#education}">Education</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">My Profile!</div>
         <div class="menu-links">
             <li><a th:href="@{#profilesummery}" th:onclick="toggleMenu()">Profile Summery</a></li>
             <li><a th:href="@{#contact}" th:onclick="toggleMenu()">Contact Me</a></li>
@@ -45,12 +39,12 @@
             <li><a th:href="@{#education}" th:onclick="toggleMenu()">Education</a></li>
 
         </div>
-    </div>
+</div>
 </nav>
 <section id="profile">
-<!--    <div class="section__pic-container">-->
-<!--        <img th:src="@{${profilepic}}" th:alt="${myName}" />-->
-<!--    </div>-->
+    <!--    <div class="section__pic-container">-->
+    <!--        <img th:src="@{${profilepic}}" th:alt="${myName}" />-->
+    <!--    </div>-->
     <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title" th:text="${myName}">name</h1>
@@ -89,44 +83,25 @@
     <p class="section__text__p1">Get To Know More</p>
     <h1 class="title">About Me</h1>
     <div class="section-container">
-<!--        <div class="section__pic-container">-->
-<!--            <img-->
-<!--                    th:src="@{${aboutpic}}"-->
-<!--                    th:alt="${myName}"-->
-<!--                    class="about-pic"-->
-<!--            />-->
-<!--        </div>-->
         <div class="about-details-container">
             <div class="about-containers">
                 <div class="details-container">
-<!--                    <img-->
-<!--                            th:src="@{${experience}}"-->
-<!--                            alt="Experience icon"-->
-<!--                            class="icon"-->
-<!--                    />-->
-<!--                    <h3>Experience</h3>-->
-<!--                    <p><span th:text="${myExpInYear}">exp</span>+ years <br />Software Development <em> (2019 - till date)</em></p>-->
-<!--                </div>-->
-<!--                <div class="details-container">-->
                     <img
                             th:src="@{${education}}"
                             alt="education icon"
                             class="icon"
                     />
                     <h3>Education</h3>
-                    <p id="education">BE (Electronics & Telecommunication) <br />Bachelors Degree <em> (2018 - 2021)</em></p>
                 </div>
             </div>
             <div class="text-container">
                 <p>
                     Hey there! I'm from Maharashtra (India) and
                     am passionate about building innovative and user-friendly applications.
-                    While I’m at the start of my professional journey, I’ve explored my skills in front-end technologies like HTML, CSS, JavaScript, ReactJS,
                     and have a strong foundation in Java and MySQL.
                 </p>
                 <p>
                     With my professional career, I'm also passionate about Music.
-                    I’m eager to contribute to impactful projects and work with like-minded professionals to grow as a developer.
                     Apart from coding, I enjoy learning new skills to stay updated in technology.
                     I speak Marathi, Hindi and English.
                 </p>
@@ -141,28 +116,6 @@
     />
 </section>
 
-<!--<section id="clients">-->
-<!--    <p class="section__text__p1">Meet my</p>-->
-<!--    <h1 class="title">Clients</h1>-->
-<!--    <div class="client-wrapper">-->
-<!--        <i id="left" class="fa-solid fa-angle-left"></i>-->
-<!--        <ul class="carousel">-->
-<!--            <li class="card" th:each="client : ${clients}">-->
-<!--                <div class="img"><img th:src="@{${client.assetUrl}}" th:alt="${client.altName}" draggable="${client.draggable}"></div>-->
-<!--                <h2 th:text="${client.clientName}">Client Name</h2>-->
-<!--                <span th:text="${client.designation}">Designation</span>-->
-<!--            </li>-->
-<!--        </ul>-->
-<!--        <i id="right" class="fa-solid fa-angle-right"></i>-->
-<!--    </div>-->
-
-<!--    <img-->
-<!--            th:src="@{${arrow.assetUrl}}"-->
-<!--            th:alt="${arrow.altName}"-->
-<!--            class="icon arrow"-->
-<!--            th:onclick="@{location.href='./#'}"-->
-<!--    />-->
-<!--</section>-->
 
 <section id="softwareskills">
     <p class="section__text__p1">Explore My</p>
@@ -203,24 +156,6 @@
             </div>
         </div>
 
-<!--        <div class="about-containers">-->
-<!--            <div class="details-container">-->
-<!--                <h2 class="experience-sub-title">Cloud Technology</h2>-->
-<!--                <div class="article-container">-->
-<!--                    <article th:each="exp : ${cloud}">-->
-<!--                        <img-->
-<!--                                th:src="@{${checkmark}}"-->
-<!--                                alt="Experience icon"-->
-<!--                                class="icon"-->
-<!--                        />-->
-<!--                        <div>-->
-<!--                            <h3 th:text="${exp.technology}">Technology</h3>-->
-<!--                            <p th:text="${exp.expLevel}">Experience</p>-->
-<!--                        </div>-->
-<!--                    </article>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
 
         <div class="about-containers">
             <div class="details-container">
@@ -269,21 +204,10 @@
                             Github
                         </button>
                     </a>
-                    <a th:href="${project.onLiveDemoClickAction}" th:target="_blank">
-                        <button class="btn btn-color-2 project-btn">
-                            Live Demo
-                        </button>
-                    </a>
                 </div>
             </div>
         </div>
     </div>
-<!--    <img-->
-<!--            th:src="@{${arrow.assetUrl}}"-->
-<!--            th:alt="${arrow.altName}"-->
-<!--            class="icon arrow"-->
-<!--            th:onclick="@{location.href='./#'}"-->
-<!--    />-->
 </section>
 
 <section id="certification">
@@ -352,7 +276,6 @@
             </ul>
         </div>
     </nav>
-    <p id="text_color">Made with ❤️ using Thymeleaf.</p>
 </footer>
 <script type="text/javascript" th:src="@{/js/script.js}"></script>
 </body>
