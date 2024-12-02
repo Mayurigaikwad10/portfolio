@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -30,7 +30,7 @@
     </nav>
     <nav id="hamburger-nav">
         <div class="logo">My Profile!</div>
-        <div class="menu-links">
+        <ul class="menu-links">
             <li><a th:href="@{#profilesummery}" th:onclick="toggleMenu()">Profile Summery</a></li>
             <li><a th:href="@{#contact}" th:onclick="toggleMenu()">Contact Me</a></li>
             <li><a th:href="@{#softwareskills}" th:onclick="toggleMenu()">Software Skills</a></li>
@@ -38,7 +38,7 @@
             <li><a th:href="@{#certification}" th:onclick="toggleMenu()">Certification</a></li>
             <li><a th:href="@{#education}" th:onclick="toggleMenu()">Education</a></li>
 
-        </div>
+        </ul>
 </nav>
 <section id="profile">
     <!--    <div class="section__pic-container">-->
@@ -71,7 +71,7 @@
                         th:src="@{${media.assetUrl}}"
                         th:alt="${media.altName}"
                         class="icon"
-                />
+                 alt="icon"/>
             </a>
         </div>
     </div>
@@ -113,7 +113,7 @@
             th:alt="${arrow.altName}"
             class="icon arrow"
             th:onclick="@{location.href='./#'}"
-    />
+     alt=""/>
 </section>
 
 
